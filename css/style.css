@@ -84,7 +84,6 @@ header {
     header div img:hover {
       transform: rotate(360deg);
       transition: 1000ms;
-      background-color: #FECB89;
       z-index: 500; }
   header nav div ul {
     display: flex;
@@ -251,3 +250,75 @@ main .historia {
       padding-right: 10rem;
       font-size: 2.5rem;
       text-align: center; }
+
+.main-ubicacion {
+  background-image: url(../assets/img/fondo-ubicacion.jpg);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 10rem repeat(3, 1fr); }
+  .main-ubicacion .iframe {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    margin-top: 11rem; }
+    .main-ubicacion .iframe iframe {
+      width: 100%;
+      margin-left: 3rem;
+      height: 110%;
+      border-radius: 10%; }
+  .main-ubicacion .Ubicacion {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3; }
+    .main-ubicacion .Ubicacion h2 {
+      font-size: 10rem;
+      font-family: "Island Moments", cursiva;
+      text-align: center;
+      padding-top: 11rem;
+      font-weight: 300; }
+    .main-ubicacion .Ubicacion p {
+      font-size: 3.5rem;
+      text-align: center;
+      font-family: "Quattrocento Sans", sans-serif;
+      padding-left: 7rem;
+      padding-right: 7rem; }
+  .main-ubicacion .Horarios-ubi {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4; }
+    .main-ubicacion .Horarios-ubi h2 {
+      font-size: 10rem;
+      font-family: "Island Moments", cursiva;
+      text-align: center;
+      padding-top: 2rem;
+      font-weight: 300; }
+    .main-ubicacion .Horarios-ubi p {
+      font-size: 3.5rem;
+      text-align: center;
+      font-family: "Quattrocento Sans", sans-serif;
+      padding-left: 7rem;
+      padding-right: 7rem; }
+  .main-ubicacion .nuestras-redes {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    padding-top: 7rem;
+    padding-bottom: 7rem; }
+    .main-ubicacion .nuestras-redes h2 {
+      font-size: 15rem;
+      font-family: "Island Moments", cursiva;
+      text-align: center;
+      padding-top: 2rem;
+      font-weight: 300; }
+    .main-ubicacion .nuestras-redes ul {
+      display: flex;
+      justify-content: center; }
+      .main-ubicacion .nuestras-redes ul li {
+        padding-left: 5rem; }
+        .main-ubicacion .nuestras-redes ul li a img {
+          width: 10rem; }
