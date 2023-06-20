@@ -1,2 +1,207 @@
-h1 {
-  font-size: 16px; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+ol {
+  list-style: none; }
+
+ul {
+  list-style: none; }
+
+html {
+  font-size: 62.5%; }
+
+img {
+  width: 100%; }
+
+header {
+  background-color: #FBE6D4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10rem;
+  position: fixed;
+  top: 0rem;
+  border-bottom: 2px solid black;
+  z-index: 999; }
+  header div img {
+    width: 20rem;
+    align-items: baseline;
+    position: fixed;
+    object-fit: cover;
+    top: 0.5rem;
+    left: 4rem;
+    background-color: #FBE6D4;
+    border-radius: 50%;
+    border: 2px solid black; }
+    header div img:hover {
+      transform: rotate(360deg);
+      transition: 1500ms;
+      background-color: #FECB89; }
+  header nav div ul {
+    display: flex;
+    padding: 5rem; }
+    header nav div ul li {
+      font-family: "Island Moments", cursiva;
+      font-size: 8rem;
+      word-spacing: 1rem;
+      padding: 5rem; }
+      header nav div ul li:hover {
+        transform: scale(1.1);
+        font-weight: 600; }
+      header nav div ul li a {
+        border-left: 1px solid rgba(0, 0, 0, 0.363);
+        border-right: 1px solid rgba(0, 0, 0, 0.363); }
+
+main .banner-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr), 10rem;
+  border-bottom: 2px solid black; }
+  main .banner-main img {
+    height: 70rem;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    object-fit: cover;
+    filter: blur(2px);
+    z-index: -1; }
+  main .banner-main h1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    font-family: "Island Moments", cursiva;
+    font-size: 15rem;
+    margin-left: 10rem;
+    z-index: 1; }
+  main .banner-main h2 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    font-family: "Island Moments", cursiva;
+    font-size: 15rem;
+    font-weight: 300;
+    margin-left: 10rem;
+    z-index: 1; }
+
+main .galeria-index {
+  background-color: #FECB89;
+  padding-top: 5rem;
+  border-bottom: 2px solid #FECB89; }
+  main .galeria-index article .galeria-index-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1;
+    padding-bottom: 5rem; }
+    main .galeria-index article .galeria-index-1 img {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 1;
+      height: 40rem;
+      object-fit: cover;
+      border-top-right-radius: 50em;
+      border-bottom-right-radius: 50rem;
+      opacity: 80%;
+      border: 5px solid rgba(0, 0, 0, 0.541);
+      border-left: none; }
+    main .galeria-index article .galeria-index-1 h3 {
+      font-size: 10rem;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 1;
+      text-align: center;
+      font-family: "Island Moments", cursiva;
+      z-index: 2; }
+    main .galeria-index article .galeria-index-1 p {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 1;
+      text-align: center;
+      align-self: center;
+      font-family: "Quattrocento Sans", sans-serif;
+      line-height: 3.5rem;
+      word-spacing: 0.5rem;
+      font-size: 3rem;
+      font-weight: 600;
+      padding-left: 4rem;
+      padding-top: 10rem;
+      padding-right: 0.5rem;
+      z-index: 2; }
+  main .galeria-index article .galeria-index-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1;
+    padding-bottom: 5rem; }
+    main .galeria-index article .galeria-index-2 img {
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 1;
+      height: 40rem;
+      object-fit: cover;
+      border-top-left-radius: 50em;
+      border-bottom-left-radius: 50rem;
+      opacity: 80%;
+      border: 5px solid rgba(0, 0, 0, 0.541);
+      border-right: none; }
+    main .galeria-index article .galeria-index-2 h3 {
+      font-size: 10rem;
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 1;
+      text-align: center;
+      font-family: "Island Moments", cursiva;
+      z-index: 2; }
+    main .galeria-index article .galeria-index-2 p {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 1;
+      text-align: center;
+      align-self: center;
+      font-family: "Quattrocento Sans", sans-serif;
+      line-height: 3.5rem;
+      word-spacing: 0.5rem;
+      font-size: 3rem;
+      font-weight: 600;
+      padding-left: 0.5rem;
+      padding-top: 10rem;
+      padding-right: 4rem;
+      z-index: 2; }
+
+main .historia {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1;
+  padding-bottom: 5rem;
+  background-color: #FECB89; }
+  main .historia .historia-2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    height: 40rem;
+    background-color: #FFA931;
+    border-radius: 20rem; }
+    main .historia .historia-2 h3 {
+      font-family: "Island Moments", cursiva;
+      font-size: 10rem;
+      text-align: center;
+      padding-top: 5rem; }
+    main .historia .historia-2 p {
+      font-family: "Quattrocento Sans", sans-serif;
+      padding-left: 10rem;
+      padding-right: 10rem;
+      font-size: 2.5rem;
+      text-align: center; }
