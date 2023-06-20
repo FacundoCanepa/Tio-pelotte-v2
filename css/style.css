@@ -19,6 +19,47 @@ html {
 img {
   width: 100%; }
 
+footer {
+  background-color: #FFA931;
+  display: flex;
+  border-top: 2px solid rgba(0, 0, 0, 0.473); }
+  footer .logo-footer {
+    padding-left: 2.5rem; }
+    footer .logo-footer img {
+      width: 15rem; }
+  footer .redes-footer ul {
+    display: flex;
+    padding-left: 2rem; }
+    footer .redes-footer ul li:nth-child(2) {
+      padding-top: 7.5rem; }
+    footer .redes-footer ul li {
+      padding-top: 0.5rem;
+      padding-left: 2rem; }
+      footer .redes-footer ul li a img {
+        width: 6rem; }
+  footer .hora-footer {
+    width: 150rem; }
+    footer .hora-footer ul {
+      display: flex;
+      padding-left: 4rem; }
+      footer .hora-footer ul li {
+        padding-left: 3rem;
+        padding-top: 1rem; }
+        footer .hora-footer ul li p {
+          font-family: "Quattrocento Sans", sans-serif;
+          font-size: 3.5rem;
+          text-align: center;
+          line-height: 4rem; }
+  footer .derechos-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 1rem; }
+    footer .derechos-footer h4 {
+      font-family: "Quattrocento Sans", sans-serif;
+      font-size: 1.6rem;
+      margin-top: auto; }
+
 header {
   background-color: #FBE6D4;
   display: flex;
@@ -28,7 +69,7 @@ header {
   height: 10rem;
   position: fixed;
   top: 0rem;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.473);
   z-index: 999; }
   header div img {
     width: 20rem;
@@ -39,11 +80,12 @@ header {
     left: 4rem;
     background-color: #FBE6D4;
     border-radius: 50%;
-    border: 2px solid black; }
+    border: 2px solid rgba(0, 0, 0, 0.473); }
     header div img:hover {
       transform: rotate(360deg);
-      transition: 1500ms;
-      background-color: #FECB89; }
+      transition: 1000ms;
+      background-color: #FECB89;
+      z-index: 500; }
   header nav div ul {
     display: flex;
     padding: 5rem; }
@@ -193,15 +235,19 @@ main .historia {
     grid-column-end: 4;
     height: 40rem;
     background-color: #FFA931;
-    border-radius: 20rem; }
+    border-radius: 20rem;
+    box-shadow: -1px 1px 81px -12px rgba(77, 77, 77, 0.82) inset;
+    -webkit-box-shadow: -1px 1px 81px -12px rgba(77, 77, 77, 0.82) inset;
+    -moz-box-shadow: -1px 1px 81px -12px rgba(77, 77, 77, 0.82) inset; }
     main .historia .historia-2 h3 {
       font-family: "Island Moments", cursiva;
       font-size: 10rem;
       text-align: center;
-      padding-top: 5rem; }
+      padding-top: 2rem; }
     main .historia .historia-2 p {
       font-family: "Quattrocento Sans", sans-serif;
       padding-left: 10rem;
+      padding-top: 3rem;
       padding-right: 10rem;
       font-size: 2.5rem;
       text-align: center; }

@@ -7,9 +7,10 @@ header {
     height: 10rem;
     position:fixed;
     top: 0rem;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.473);
     z-index: 999;
     div{
+
         img{
             width: 20rem;
             align-items: baseline;
@@ -19,11 +20,12 @@ header {
             left: 4rem;
             background-color: $color-header;
             border-radius: 50%;
-            border: 2px solid black;
+            border: 2px solid rgba(0, 0, 0, 0.473);
             &:hover {
                 transform: rotate(360deg);
-                transition: 1500ms;
+                transition: 1000ms;
                 background-color: $color-main;
+                z-index: 500;
             }
         }
     }

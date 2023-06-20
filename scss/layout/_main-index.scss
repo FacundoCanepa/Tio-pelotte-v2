@@ -149,16 +149,21 @@ main{
             height: 40rem;
             background-color: $color-footer;
             border-radius: 20rem;
+            box-shadow:-1px 1px 81px -12px rgba(77,77,77,0.82) inset;
+            -webkit-box-shadow: -1px 1px 81px -12px rgba(77,77,77,0.82) inset;
+            -moz-box-shadow: -1px 1px 81px -12px rgba(77,77,77,0.82) inset;
             h3{
                 font-family: $font-1;
                 font-size: 10rem ;
                 text-align: center;
-                padding-top: 5rem;
+                padding-top: 2rem;
             }
             p{
                 font-family: $font-2;
                 padding-left:10rem ;
+                padding-top: 3rem;
                 padding-right: 10rem;
+                
                 font-size: 2.5rem;
                 text-align: center;
             }
