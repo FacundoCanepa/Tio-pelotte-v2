@@ -21,6 +21,9 @@ footer{
                 a{
                     img{
                         width: 6rem;
+                        &:hover{
+                            transform: scale(1.1);
+                        }
                     }
                 }
             }
