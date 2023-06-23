@@ -16,7 +16,7 @@ main{
         }
         h1{
             grid-column-start: 1;
-            grid-column-end: 3;
+            grid-column-end: 4;
             grid-row-start: 3;
             grid-row-end: 4;
             font-family: $font-1;
@@ -43,7 +43,6 @@ main{
         
         article{
             .galeria-index-1{
-                // background-color: $color-footer;
                 display: grid;
                 grid-template-columns: repeat(4,1fr);
                 grid-template-rows: 1;     
@@ -53,7 +52,7 @@ main{
                     grid-column-end: 4;
                     grid-row-start: 1;
                     grid-row-end: 1;
-                    height: 40rem;
+                    height: 45rem;
                     object-fit: cover;
                     border-top-right-radius: 50em;
                     border-bottom-right-radius: 50rem;
@@ -79,13 +78,12 @@ main{
                     text-align: center;
                     align-self: center;
                     font-family: $font-2;
-                    line-height: 3.5rem;
+                    line-height: 3rem;
                     word-spacing: 0.5rem;
                     font-size: 3rem;
-                    font-weight: 600;
-                    padding-left: 4rem;
+                    font-weight: 300;
+                    padding-left: 3rem;
                     padding-top: 10rem;
-                    padding-right: 0.5rem;
                     z-index: 2;
                 }
             }
@@ -99,7 +97,7 @@ main{
                     grid-column-end: 5;
                     grid-row-start: 1;
                     grid-row-end: 1;
-                    height: 40rem;
+                    height: 45rem;
                     object-fit: cover;
                     border-top-left-radius: 50em;
                     border-bottom-left-radius: 50rem;
@@ -128,24 +126,20 @@ main{
                     line-height: 3.5rem;
                     word-spacing: 0.5rem;
                     font-size: 3rem;
-                    font-weight: 600;
-                    padding-left: 0.5rem;
+                    font-weight: 300;
                     padding-top: 10rem;
-                    padding-right: 4rem;
+                    padding-right: 3rem;
                     z-index: 2;
                 }
             }
         }
     }
     .historia{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1;
         padding-bottom: 5rem;
         background-color: $color-main;
         .historia-2{
-            grid-column-start: 2;
-            grid-column-end: 4;
+            margin-left: 3rem;
+            margin-right: 3rem;
             height: 40rem;
             background-color: $color-footer;
             border-radius: 20rem;
@@ -161,10 +155,10 @@ main{
             p{
                 font-family: $font-2;
                 padding-left:10rem ;
-                padding-top: 3rem;
+                padding-top: 1rem;
                 padding-right: 10rem;
                 
-                font-size: 2.5rem;
+                font-size: 3rem;
                 text-align: center;
             }
         }

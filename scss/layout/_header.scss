@@ -12,7 +12,7 @@ header {
     div{
 
         img{
-            width: 20rem;
+            width: 15rem;
             align-items: baseline;
             position:fixed;
             object-fit: cover;
@@ -32,12 +32,11 @@ header {
         div{
             ul{
                 display: flex;
-                padding: 5rem;
                 li{
                     font-family: $font-1;
                     font-size: 8rem;
                     word-spacing: 1rem;
-                    padding: 5rem;
+                    padding: 1rem;
                     &:hover{
                         transform: scale(1.1);
                         font-weight: 600;

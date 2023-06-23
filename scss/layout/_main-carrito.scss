@@ -115,6 +115,7 @@
         div{
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
             margin-top: 1rem;
             div{
                 width: 25rem;
