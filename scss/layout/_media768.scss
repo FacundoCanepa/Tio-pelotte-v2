@@ -1,0 +1,144 @@
+@media (max-width:968px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        .logo-footer{
+            display: none;
+        }
+        .redes-footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        .hora-footer{
+            ul{
+                display: flex;
+                flex-direction: column;
+                li{
+                    padding-top: 1rem;
+                }
+            }
+        }
+    }
+    main{
+        .banner-main{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows:10rem 1fr 1fr;
+            img{
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 4;
+                height: 30rem;
+            }
+            h1{
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                text-align: center;
+                font-size: 10rem;
+            }
+            h2{
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 3;
+                grid-row-end: 4;
+                text-align: center;
+                font-size: 6rem;
+            }
+        }
+        .galeria-index{
+            padding-top: 5rem;
+            border-bottom:none;
+            article{
+                .galeria-index-1{
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr;   
+                    padding-left: 0rem;
+                    padding-right: 0rem;
+                    padding-bottom: 2rem;
+                    img{
+                        width: 100%;
+                        grid-column-start: 1;
+                        grid-column-end: 2;
+                        grid-row-start: 1;
+                        grid-row-end: 2;
+                        height: 40rem;
+                        object-fit: cover;
+                        border-radius: 0%;
+                        opacity: 50%;
+                        border:none;
+                    }
+                    p{
+                        font-size: 1.6rem;
+                    }
+                }
+                .galeria-index-2{
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr;   
+                    padding-left: 0rem;
+                    padding-right: 0rem;
+                    padding-bottom: 2rem;
+                    img{
+                        grid-column-start: 1;
+                        grid-column-end: 2;
+                        grid-row-start: 1;
+                        grid-row-end: 2;
+                        height: 40rem;
+                        object-fit: cover;
+                        border-radius: 0%;
+                        opacity: 50%;
+                        border: none;
+                    }
+                    h3{
+                        grid-column-start: 1;
+                        grid-column-end: 2;
+                        grid-row-start: 1;
+                        grid-row-end: 2;
+                        text-align: center;
+                        z-index: 2;
+                    }
+                    p{
+                        grid-column-start: 1;
+                        grid-column-end: 2;
+                        grid-row-start: 1;
+                        grid-row-end: 2;
+                        font-size: 1.6rem;
+                        padding-left: 3rem;
+                        padding-top: 10rem;
+                        z-index: 2;
+                    }
+                }
+            }
+        }
+        .historia{
+            .historia-2{
+                margin-left: 3rem;
+                margin-right: 3rem;
+                height: auto;
+                background-color: $color-main;
+                border-radius: none;
+                box-shadow:none;
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                h3{
+                    font-size: 5rem ;
+                    text-align: center;
+                    padding-top: 0rem;
+                }
+                p{
+                    font-family: $font-2;
+                    padding-left:2rem ;
+                    padding-top: 1rem;
+                    padding-right: 2rem;
+                    font-size: 2rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
