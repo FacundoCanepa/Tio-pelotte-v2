@@ -10,7 +10,6 @@ header {
     border-bottom: 2px solid rgba(0, 0, 0, 0.473);
     z-index: 999;
     div{
-
         img{
             width: 15rem;
             align-items: baseline;
@@ -24,12 +23,18 @@ header {
             &:hover {
                 transform: rotate(360deg);
                 transition: 1000ms;
-                z-index: 500;
+                    z-index: 500;
             }
         }
     }
     nav{
         div{
+            input{
+                display: none;
+            }
+            i{
+                display: none;
+            }
             ul{
                 display: flex;
                 li{
