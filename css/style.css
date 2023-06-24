@@ -22,8 +22,8 @@ img {
 footer {
   background-color: #FFA931;
   display: grid;
-  grid-template-columns: 20rem 30rem 1fr;
-  grid-template-rows: 1fr 5rem;
+  grid-template-columns: 20rem 30rem 3fr;
+  grid-template-rows: 1fr;
   border-top: 2px solid rgba(0, 0, 0, 0.473); }
   footer .logo-footer {
     padding-left: 2.5rem;
@@ -54,24 +54,28 @@ footer {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
-    grid-row-end: 2; }
+    grid-row-end: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     footer .hora-footer ul {
       display: flex; }
       footer .hora-footer ul li {
         padding-left: 2.5rem;
-        padding-top: 1rem; }
+        justify-content: space-between; }
         footer .hora-footer ul li p {
           font-family: "Quattrocento Sans", sans-serif;
           font-size: 3rem;
           text-align: center;
-          line-height: 4rem;
-          text-align: center; }
+          line-height: 4rem; }
   footer .derechos-footer {
     grid-column-start: 1;
     grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    margin-bottom: 1rem; }
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: end;
+    align-items: end; }
     footer .derechos-footer h4 {
       text-align: center;
       font-family: "Quattrocento Sans", sans-serif;
@@ -637,3 +641,71 @@ main .historia {
         padding-left: 5rem; }
         .main-ubicacion .nuestras-redes ul li a img {
           width: 10rem; }
+
+@media (max-width: 1024px) {
+  header div img {
+    width: 9.8rem;
+    top: 0rem;
+    left: 0.5rem;
+    border: none; }
+  header nav div ul li {
+    font-size: 5rem; }
+  footer {
+    grid-template-columns: 1fr 1fr 1fr; }
+    footer .logo-footer {
+      padding-left: 0; }
+    footer .redes-footer ul {
+      padding-left: 0; }
+      footer .redes-footer ul li {
+        padding: 0; }
+    footer .hora-footer ul {
+      padding-bottom: 2rem; }
+      footer .hora-footer ul li p {
+        padding-left: 0rem;
+        font-size: 2.5rem;
+        line-height: 2.5rem; }
+  main .banner-main h1 {
+    font-size: 15rem;
+    margin-left: 0rem; }
+  main .banner-main h2 {
+    font-size: 11rem;
+    margin-left: 0rem; }
+  main .galeria-index article .galeria-index-1 h3 {
+    font-size: 7rem; }
+  main .galeria-index article .galeria-index-1 p {
+    padding-top: 2rem;
+    font-size: 2.5rem; }
+  main .galeria-index article .galeria-index-2 h3 {
+    font-size: 7rem; }
+  main .galeria-index article .galeria-index-2 p {
+    font-size: 2.5rem;
+    padding-top: 2.5rem; }
+  .pedidos {
+    grid-template-rows: 20rem 1fr 20rem 20rem 1fr; }
+    .pedidos .img-pedidos {
+      padding-left: 2rem;
+      padding-right: 0rem; }
+      .pedidos .img-pedidos img {
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0%; }
+  .main-recetas .recetas-main {
+    grid-template-rows: 15rem 40rem 1fr;
+    grid-template-columns: repeat(3, 1fr) 30rem; }
+    .main-recetas .recetas-main .recetas-h h3 {
+      font-size: 4rem; }
+    .main-recetas .recetas-main .recetas-h h4, .main-recetas .recetas-main .recetas-h h5 {
+      font-size: 2rem; }
+    .main-recetas .recetas-main ul li {
+      font-size: 2rem; }
+    .main-recetas .recetas-main ol {
+      padding-left: 3rem;
+      padding-right: 2rem; }
+      .main-recetas .recetas-main ol li {
+        padding-left: 0rem;
+        padding-right: 0rem;
+        margin-top: 0.5rem; }
+  .main-pastas .banner-pastas {
+    align-items: center; }
+    .main-pastas .banner-pastas h2 {
+      font-size: 10rem; } }
