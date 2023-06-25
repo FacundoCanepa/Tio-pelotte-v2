@@ -117,6 +117,19 @@ main{
             }
         }
     }
+    .recetas-img{
+        grid-column-start:4 ;
+        grid-column-end:5;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        margin-right: 1rem;
+        img{
+            width: 95%;
+            height: 100%;
+            object-fit: cover;
+            padding-top: 10rem;
+        }
+    }
 }
 .main-pastas{
     .banner-pastas{

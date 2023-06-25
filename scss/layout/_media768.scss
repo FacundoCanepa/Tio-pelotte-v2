@@ -5,7 +5,6 @@
         align-items:normal;
         position: relative;
         div{
-
             img{
                 align-items: top;
                 position:absolute;
@@ -84,7 +83,7 @@
                     }
                 }
             }
-    }
+        }
     footer{
         display: flex;
         flex-direction: column;
@@ -308,24 +307,26 @@
     .footer-ubi{
         .redes-footer{
             display: none;
-
         }
     }
     .main-pastas{
         .banner-pastas{
             grid-template-rows:1fr;
-            img{
-                grid-column-start: 1;
-                grid-column-end:2 ;
-                grid-row-start:1;
-                grid-row-end:2;
-            }
             h2{
                 grid-column-start: 1;
                 grid-column-end:2 ;
                 grid-row-start:1;
                 grid-row-end: 2;
                 font-size: 7rem;
+            }
+            img{
+                grid-column-start: 1;
+                grid-column-end:2 ;
+                grid-row-start:1;
+                grid-row-end: 2;
+                width: 100%;
+                height: 20rem;
+                object-fit: cover;
             }
         }
         .tipos-pastas{
@@ -340,7 +341,7 @@
                     border-radius: 108px;
                 }
                 h3{
-                    font-size: 11rem;
+                    font-size: 10rem;
                 }
             }
             .pastas-p{
@@ -361,7 +362,7 @@
                             cursor:pointer;
                             color:#000000;
                             font-size:1.6rem;
-                            padding:0rem 0rem;
+                            padding:0rem;
                             text-decoration:none;
                         }
                         input{
@@ -382,6 +383,76 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+    .main-recetas{
+        background-color: $color-main;
+        .banner-recetas{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows:  1fr;
+            h2{
+                margin-top: 0rem;
+                font-size: 8rem;
+            }
+        }
+        .recetas-main{
+            display: grid;
+            grid-template-rows: 15rem 48rem 1fr;
+            grid-template-columns: 100%;
+            margin-top: 2.5rem;
+            padding-bottom: 2rem;
+            .recetas-h{
+                grid-column-start:1 ;
+                grid-column-end:2;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                text-align: center;
+                padding-top: 1rem;
+                h3{
+                    font-size: 3.5rem;
+                }
+                h4,h5{
+                    font-size: 2rem;
+                    margin-top: 0.5rem;
+                }
+            }
+            ul{
+                li{
+                    font-size: 2.5rem;
+                    padding-top: 1rem;
+                }
+            }
+            ol{
+                grid-column-start:1 ;
+                grid-column-end:2;
+                grid-row-start: 3;
+                grid-row-end: 4;
+                padding-left: 3rem;
+                padding-right: 0rem;
+                li{
+                    font-size: 2.5rem;
+                    font-family: $font-2;
+                    text-align: center;
+                    margin-top: 3rem;
+                    padding-left: 0.5rem;
+                    padding-bottom: 1rem;
+                }
+                }
+                .recetas-img{
+                    grid-column-start:1 ;
+                    grid-column-end:2;
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                    margin-right: 0rem;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        padding-top: 0rem;
+                        border-radius: 0%;
                 }
             }
         }
