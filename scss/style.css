@@ -446,6 +446,8 @@ main .historia .historia-2 p {
   text-align: center;
 }
 .pedidos .tu-pedido div ul form li {
+  display: flex;
+  align-items: center;
   padding-top: 5rem;
   padding-left: 1.5rem;
 }
@@ -943,7 +945,7 @@ main .historia .historia-2 p {
   }
   header nav div ul {
     display: none;
-    background-color: rgba(251, 230, 212, 0.8235294118);
+    background-color: rgba(251, 230, 212, 0.9254901961);
     position: relative;
     height: 40rem;
     width: 100%;
@@ -1049,6 +1051,7 @@ main .historia .historia-2 p {
   }
   main .galeria-index article .galeria-index-1 p {
     font-size: 1.6rem;
+    padding-right: 3rem;
   }
   main .galeria-index article .galeria-index-2 {
     grid-template-columns: 1fr;
@@ -1363,5 +1366,84 @@ main .historia .historia-2 p {
   }
   .pedidos .carrito {
     margin-top: 0rem;
+  }
+}
+@media (max-width: 425px) {
+  main .banner-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  main .banner-main img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 20rem;
+  }
+  main .banner-main h1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 8rem;
+  }
+  main .banner-main h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    font-size: 5rem;
+  }
+  main .galeria-index article .galeria-index-1 p {
+    padding-left: 0rem;
+    padding-top: 1.5rem;
+    padding-right: 0rem;
+  }
+  main .galeria-index article .galeria-index-2 p {
+    padding-left: 0rem;
+    padding-top: 1.5rem;
+    padding-right: 0rem;
+  }
+  main .historia .historia-2 {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  main .historia .historia-2 p {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .main-pastas .tipos-pastas .banner-pastas2 img {
+    border-radius: 0%;
+    padding-left: 0rem;
+  }
+  .main-pastas .tipos-pastas .banner-pastas2 h3 {
+    font-size: 8rem;
+    font-weight: 600;
+  }
+  .main-pastas .tipos-pastas .pastas-p {
+    font-size: 1.6rem;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .pedidos .tu-pedido div ul form li {
+    display: block;
+    align-items: normal;
+    justify-content: normal;
+  }
+  .pedidos .tu-pedido div ul form li label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pedidos .tu-pedido div ul form li label img {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .pedidos .tu-pedido div ul form li input {
+    margin-left: 0rem;
   }
 }/*# sourceMappingURL=style.css.map */
