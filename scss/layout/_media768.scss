@@ -457,4 +457,37 @@
             }
         }
     }
+    .pedidos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0rem 1fr 20rem ;
+        .img-pedidos{
+            display: none;
+        }
+        .carrito-pedido{
+            div{
+                display: flex;
+                width: 100%;
+                margin-left: 0rem;
+                background-color: #FEC270;
+                padding: 0rem;
+                border-radius: 0%;
+                justify-content: center;
+                border: none;
+                padding-top: 1rem;
+                padding-bottom: 2rem;
+                img{
+                    width: 5rem;
+                }
+                h4{
+                    font-size: 2.5rem;
+                    font-family: $font-2;
+                    margin-left: 5rem;
+                    margin-top: 1rem;
+                }
+            }
+        }
+        .carrito{
+            margin-top: 0rem;
+        }
+    }
 }
